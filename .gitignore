@@ -1,0 +1,27 @@
+# Quarto artifacts
+*_files/
+.quarto/
+
+# Data files (obtain separately - see README)
+data/
+
+# R artifacts
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Editor files
+*.swp
+*~
+.vscode/
+
+# Claude Code local settings
+.claude/
