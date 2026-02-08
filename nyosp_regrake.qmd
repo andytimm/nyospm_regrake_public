@@ -49,9 +49,9 @@ lot of cause to think hard about weights.
 Some recent types of weights I've worked on:
 
 -  TV viewership weights (weight ~41M TV viewership panel to US TV viewing gen pop)
--  Political 'Microtargeting' Surveys (sample 5-10k people, weight to voter file, then model)
+-  Political surveys (Polls, message tests, microtargeting surveys...)
 -  COVID Vaccine Message Testing (multi-arm RCT to convince people to get vaccine, weight to customers of our pharmacy partner)
--  \+ More (Market Research, RCTs in politics, RCTs in advertising with survey outcomes...)
+-  \+ More (Market Research, field experiments in politics, RCTs in advertising with survey outcomes...)
 
 # Raking (Easy Mode) {background-color="#40666e"}
 
@@ -253,7 +253,7 @@ sample_data <- sample_data %>% harvest(target,max_weight = 10)
 # With raked weights, we recover the population mean as expected
 sample_data %>% summarize(mean_p = weighted.mean(enjoys_pineapple,weights))
 ```
-# Raking (hard Mode) {background-color="#40666e"}
+# Raking (Hard Mode) {background-color="#40666e"}
 
 ## Back to reality
 
